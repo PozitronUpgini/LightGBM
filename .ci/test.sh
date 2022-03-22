@@ -204,7 +204,7 @@ elif [[ $TASK == "cuda" ]]; then
         pytest $BUILD_DIRECTORY/tests || exit -1
         exit 0
     elif [[ $METHOD == "source" ]]; then
-        cmake -DUSE_CUDA=ON ..
+        cmake -DUSE_CUDA=ON -DUSE_DEBUG=ON ..
     fi
 elif [[ $TASK == "mpi" ]]; then
     if [[ $METHOD == "pip" ]]; then
