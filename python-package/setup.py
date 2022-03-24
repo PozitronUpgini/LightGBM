@@ -9,6 +9,7 @@ from pathlib import Path
 from platform import system
 from shutil import copyfile, copytree, rmtree
 from typing import List, Optional, Union
+import pandas as pd
 
 from setuptools import find_packages, setup
 from setuptools.command.install import install
